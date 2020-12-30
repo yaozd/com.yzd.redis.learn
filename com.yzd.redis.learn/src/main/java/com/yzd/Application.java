@@ -14,7 +14,7 @@ public class Application {
         Options options = new OptionsBuilder()
                 .include(JRedisClientRunner.class.getSimpleName())
                 //.output("redis-throughput.log")
-                .forks(0)
+                //.forks(0)
                 .build();
         new Runner(options).run();
     }
